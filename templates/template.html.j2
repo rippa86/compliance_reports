@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Compliance Report - 2023-01-01</title>
+    <title>Compliance Report - {{ date_dir }}</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -64,12 +64,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Server Compliance Report for 2023-01-01</h1>
+        <h1>Server Compliance Report for {{ date_dir }}</h1>
         <ul>
-            <li>
-                <a href="2023-01-01/server1.html">Server1</a>
-                <span class="status pass">Pass</span>
-            </li>
+            <!-- Inserthere -->
+            <li><a href="2023-01-01/server1.html">Server1</a><span class="status pass">Pass</span></li>
             <li><a href="2023-01-01/server2.html">Server2</a><span class="incident-number">IM12345</span><span class="status fail">Fail</span></li>
             <!-- Additional servers as needed -->
         </ul>
